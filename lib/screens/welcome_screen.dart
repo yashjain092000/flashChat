@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'login_screen.dart';
+import 'registration_screen.dart';
 
 class WelcomeScreen extends StatefulWidget {
   static const String id='welcome_screen';
@@ -63,6 +64,7 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
                 elevation: 5.0,
                 child: MaterialButton(
                   onPressed: () {
+                    Navigator.pushNamed(context, RegistrationScreen.id);
                     //Go to registration screen.
                   },
                   minWidth: 200.0,
