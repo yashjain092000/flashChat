@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'login_screen.dart';
 
 class WelcomeScreen extends StatefulWidget {
   static const String id='welcome_screen';
@@ -43,7 +44,7 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
                 borderRadius: BorderRadius.circular(30.0),
                 child: MaterialButton(
                   onPressed: () {
-                    Navigator.push(context, )
+                    Navigator.pushNamed(context, LoginScreen.id);
                     //Go to login screen.
                   },
                   minWidth: 200.0,
